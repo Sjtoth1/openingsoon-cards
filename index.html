@@ -4,202 +4,367 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Opening Soon PRO · new restaurant leads, every week</title>
-<meta name="description" content="Every new restaurant, bar and café opening signal in your metro - liquor applications, permits, press - researched and delivered weekly to the people who sell to new restaurants.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Every new restaurant, bar and cafe opening signal in your metro - liquor applications, permits, press - researched and delivered weekly to the people who sell to new restaurants.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:light dark;--ink:#171411;--bg:#f7f2e9;--paper:#fffdf9;--line:#e3dacb;--accent:#c4411a;--accent-2:#1f6f5b;--muted:#6f675d;--stamp:#b2371a}
-:root:not([data-theme="light"]){@media(prefers-color-scheme:dark){--ink:#f3eee6;--bg:#161310;--paper:#201c17;--line:#35302a;--accent:#ff7a4a;--accent-2:#5cc9a7;--muted:#a69e92;--stamp:#ff7a4a}}
-:root[data-theme="dark"]{--ink:#f3eee6;--bg:#161310;--paper:#201c17;--line:#35302a;--accent:#ff7a4a;--accent-2:#5cc9a7;--muted:#a69e92;--stamp:#ff7a4a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-h1,h2,h3,.wm{font-family:Fraunces,Georgia,serif;letter-spacing:-.015em}
-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-.wm{font-weight:700;font-size:20px;display:flex;align-items:center;gap:10px}
-.wm .tag{font:600 11px/1 Inter,sans-serif;letter-spacing:.16em;padding:5px 7px;border:1.5px solid var(--stamp);color:var(--stamp);border-radius:4px;transform:rotate(-4deg)}
-nav .links a{margin-left:22px;color:var(--muted);text-decoration:none;font-weight:500;font-size:15px}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:48px 0 56px}
-@media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:24px}}
-.kick{font:600 12px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
-h1{font-size:clamp(38px,5.4vw,64px);line-height:1.02;margin:14px 0 18px;font-weight:700}
-h1 em{font-style:italic;color:var(--accent);font-weight:500}
-.lead{font-size:19px;color:var(--muted);max-width:560px;margin:0 0 26px}
-.btn{display:inline-block;padding:13px 20px;border-radius:9px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:15px;margin:0 10px 10px 0}
-.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
-.proof{font-size:13.5px;color:var(--muted);margin-top:6px}
-.shot{position:relative}
-.shot img{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(0,0,0,.45);transform:rotate(1.2deg)}
-.shot .pill{position:absolute;left:-8px;top:-14px;z-index:2;background:var(--accent-2);color:#fff;font:600 12px/1 Inter;letter-spacing:.08em;padding:8px 11px;border-radius:999px;transform:rotate(-3deg)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 54px}
-@media(max-width:640px){.stats{grid-template-columns:1fr}}
-.stat{padding:18px 20px;background:var(--paper);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:inherit}
-.stat b{font-family:Fraunces,serif;font-size:34px;font-weight:700;display:block;line-height:1.1}
-.stat span{color:var(--muted);font-size:14px}.stat em{display:block;margin-top:8px;color:var(--accent);font-style:normal;font-weight:600;font-size:14px}
-section{padding:46px 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(28px,3.6vw,40px);margin:0 0 10px;font-weight:700}
-.sub{color:var(--muted);max-width:640px;margin:0 0 24px;font-size:17px}
-table.teaser{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14.5px}
-table.teaser th,table.teaser td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
-table.teaser th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:color-mix(in srgb,var(--paper) 70%,var(--bg))}
-table.teaser tr:last-child td{border-bottom:0}
-table.cmp td:first-child{font-weight:600;white-space:nowrap}table.cmp td:last-child{background:color-mix(in srgb,var(--accent) 7%,var(--paper))}table.cmp th:last-child{color:var(--accent)}
-@media(max-width:760px){table.cmp{display:block;overflow-x:auto}}
-.st{display:inline-block;font:600 11px/1 Inter;letter-spacing:.08em;padding:5px 7px;border-radius:4px;color:var(--stamp);border:1.5px solid var(--stamp);white-space:nowrap}
-.t3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}@media(max-width:760px){.t3{grid-template-columns:1fr}}
-.step{padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:12px}
-.step .n{font-family:Fraunces,serif;font-size:30px;color:var(--accent);font-weight:700}.step h3{margin:6px 0 6px;font-size:20px}.step p{margin:0;color:var(--muted);font-size:15px}
-ul.f{columns:2;gap:40px;padding-left:20px;margin:0}ul.f li{margin:5px 0;break-inside:avoid}@media(max-width:640px){ul.f{columns:1}}
-.who{display:flex;flex-wrap:wrap;gap:8px}.who span{padding:7px 12px;border:1px solid var(--line);border-radius:999px;font-size:14px;background:var(--paper)}
-.price{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}@media(max-width:760px){.price{grid-template-columns:1fr}}
-.p{padding:24px;border:1px solid var(--line);border-radius:14px;background:var(--paper);display:flex;flex-direction:column}
-.p.hi{border-color:var(--accent);box-shadow:0 20px 50px -30px rgba(196,65,26,.6)}
-.p .n{font-family:Fraunces,serif;font-size:42px;font-weight:700;line-height:1}.p .n small{font-family:Inter;font-size:15px;font-weight:400;color:var(--muted);margin-left:4px}
-.p ul{padding-left:18px;color:var(--muted);font-size:15px;flex:1}.p .btn{align-self:flex-start;margin:6px 0 0}.metro-btns{display:flex;flex-wrap:wrap;gap:8px}.metro-btns .btn{margin:6px 0 0;padding:11px 14px;font-size:14px}
-details{border-top:1px solid var(--line);padding:14px 0}details summary{cursor:pointer;font-weight:600;font-size:17px}details p{color:var(--muted);margin:8px 0 0}
-footer{padding:30px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}footer a{color:inherit}
-/* ---- phones and folds (2026-11-06: owner on a Z Fold front screen: "looks kind of sloppy I can't really read this") ---- */
-@media(max-width:860px){
-  .hero{gap:22px;padding:18px 0 34px}
-  .shot{max-height:230px;overflow:hidden;border-radius:12px;border:1px solid var(--line)}
-  .shot img{transform:none;border:0;border-radius:0;box-shadow:none;object-fit:cover;object-position:top left;height:230px}
-  .shot .pill{left:10px;top:10px;transform:none}
-  .btn{display:block;text-align:center;margin:0 0 10px}
-  .lead{font-size:17px}
-  nav .links a{margin-left:14px;font-size:14px}
-  section{padding:32px 0}
-  /* teaser rows become cards */
-  table.teaser:not(.cmp),table.teaser:not(.cmp) tbody,table.teaser:not(.cmp) tr,table.teaser:not(.cmp) td{display:block}
-  table.teaser:not(.cmp) thead{display:none}
-  table.teaser:not(.cmp) tr{padding:12px 14px;border-bottom:1px solid var(--line)}
-  table.teaser:not(.cmp) td{padding:2px 0;border:0}
-  table.teaser:not(.cmp) td:nth-child(2){font-size:17px}
-  table.teaser:not(.cmp) td:nth-child(3),table.teaser:not(.cmp) td:nth-child(5){color:var(--muted);font-size:13.5px}
-  table.teaser:not(.cmp) td:nth-child(5)::before{content:"When: "}
-  /* comparison: one card per row, only the two columns that matter */
-  table.cmp,table.cmp tbody,table.cmp tr,table.cmp td{display:block}
-  table.cmp{overflow:visible}
-  table.cmp thead{display:none}
-  table.cmp tr{padding:12px 14px;border-bottom:1px solid var(--line)}
-  table.cmp td{padding:3px 0;border:0;white-space:normal}
-  table.cmp td:nth-child(2),table.cmp td:nth-child(3){display:none}
-  table.cmp td:first-child{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  table.cmp td:nth-child(4)::before{content:"Lead-list services: ";font-weight:600;color:var(--muted)}
-  table.cmp td:nth-child(5){background:transparent;padding-top:4px}
-  table.cmp td:nth-child(5)::before{content:"Opening Soon PRO: ";font-weight:600;color:var(--accent)}
-  .p .n{font-size:34px}
-}
-@media(max-width:400px){h1{font-size:34px}.stat b{font-size:28px}}
+body{margin:0;background:#0A0C10;color:#F3F5F8;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#FFB15C}a:hover{color:#FFC98A}
+h1,h2,h3,.display{font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-0.025em}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:12px;font:600 15px/1 Inter,sans-serif;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:#FF7A1A;color:#0A0C10}.btn-primary:hover{background:#FF9440;color:#0A0C10}
+.btn-glass{background:rgba(255,255,255,0.06);color:#F3F5F8;border-color:rgba(255,255,255,0.14)}.btn-glass:hover{background:rgba(255,255,255,0.1);color:#F3F5F8}
+.btn-white{background:#F3F5F8;color:#0A0C10}.btn-white:hover{background:#FFFFFF;color:#0A0C10}
+.glass{background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.09);border-radius:20px;backdrop-filter:blur(10px)}
+.eyebrow{font:600 12px/1 Inter,sans-serif;letter-spacing:0.16em;text-transform:uppercase;color:#FFB15C}
+.pill{display:inline-flex;align-items:center;gap:6px;font:600 11px/1 Inter,sans-serif;letter-spacing:0.08em;text-transform:uppercase;padding:7px 10px;border-radius:999px}
+.muted{color:#9AA4B5}
+.grid-bg{background-image:linear-gradient(rgba(255,255,255,0.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.045) 1px,transparent 1px);background-size:48px 48px;background-position:center top}
+table.sheet{width:100%;border-collapse:collapse;font-size:13.5px}
+table.sheet th{text-align:left;font:600 10.5px/1 Inter,sans-serif;letter-spacing:0.12em;text-transform:uppercase;color:#9AA4B5;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.08)}
+table.sheet td{padding:13px 16px;border-bottom:1px solid rgba(255,255,255,0.06);vertical-align:top}
+table.sheet tr:last-child td{border-bottom:0}
+table.cmp{width:100%;border-collapse:separate;border-spacing:0}
+table.cmp th,table.cmp td{padding:16px 18px;border-bottom:1px solid rgba(255,255,255,0.08);vertical-align:top;font-size:15px;text-align:left}
+table.cmp th{font:600 11px/1 Inter,sans-serif;letter-spacing:0.12em;text-transform:uppercase;color:#9AA4B5;padding-top:0}
+table.cmp td:first-child{font-weight:600;white-space:nowrap;color:#F3F5F8}
+table.cmp td{color:#C3CAD6}
+table.cmp td:last-child{background:rgba(255,122,26,0.08);color:#F3F5F8;font-weight:500}
+table.cmp tr:last-child td{border-bottom:0}
+.ticker{display:flex;gap:12px;overflow:hidden;white-space:nowrap}
+.tick{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);font-size:13px;color:#C3CAD6}
+.tick b{color:#F3F5F8;font-weight:600}
+.dot{width:7px;height:7px;border-radius:50%;display:inline-block}
+.faq{padding:18px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;flex-direction:column;gap:6px}
+@media (max-width:860px){.wrap{padding:0 16px}.hide-m{display:none !important}.stack-m{grid-template-columns:1fr !important}.hero-grid{grid-template-columns:1fr !important}h1{font-size:44px !important}.bento{grid-template-columns:1fr !important}.bento > div{grid-column:auto !important;grid-row:auto !important}}
+</style>
+<style>
+html{scroll-behavior:smooth}
+/* motion (2026-11-06, owner: "modern dynamic elements") - all of it off under prefers-reduced-motion */
+.rise{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.rise.in{opacity:1;transform:none}
+.rise.d1{transition-delay:.08s}.rise.d2{transition-delay:.16s}.rise.d3{transition-delay:.24s}
+.lift{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.lift:hover{transform:translateY(-4px);border-color:rgba(255,177,92,0.45);box-shadow:0 24px 60px -30px rgba(255,122,26,0.35)}
+.glow{animation:breathe 7s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.85;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.06)}}
+.dot.live{box-shadow:0 0 0 0 rgba(110,231,183,.6);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(110,231,183,.55)}70%{box-shadow:0 0 0 9px rgba(110,231,183,0)}100%{box-shadow:0 0 0 0 rgba(110,231,183,0)}}
+.ticker{mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.ticker-track{display:inline-flex;gap:12px;animation:marquee 60s linear infinite;will-change:transform}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.row-in{opacity:0;transform:translateY(8px);animation:rowin .5s ease forwards}
+.row-in:nth-child(1){animation-delay:.3s}.row-in:nth-child(2){animation-delay:.5s}.row-in:nth-child(3){animation-delay:.7s}.row-in:nth-child(4){animation-delay:.9s}.row-in:nth-child(5){animation-delay:1.1s}
+@keyframes rowin{to{opacity:1;transform:none}}
+.hero-in{animation:heroin .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes heroin{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.card-in{animation:cardin 1s cubic-bezier(.2,.7,.2,1) .15s both}
+@keyframes cardin{from{opacity:0;transform:translateY(26px) scale(.98)}to{opacity:1;transform:none}}
+.shine{background:linear-gradient(90deg,#F3F5F8 0%,#FFFFFF 45%,#FFB15C 50%,#FFFFFF 55%,#F3F5F8 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{from{background-position:120% 0}to{background-position:-120% 0}}
+@media (prefers-reduced-motion: reduce){.rise{opacity:1;transform:none;transition:none}.glow,.dot.live,.ticker-track,.row-in,.hero-in,.card-in,.shine{animation:none}.row-in{opacity:1;transform:none}.shine{color:#F3F5F8;background:none}.lift:hover{transform:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<nav><div class="wm">Opening Soon <span class="tag">PRO</span></div><div class="links"><a href="#samples">Samples</a><a href="#how">How it works</a><a href="#compare">Compare</a><a href="#pricing">Pricing</a></div></nav>
+<div style="display:flex;flex-direction:column;min-width:0;background:#0A0C10">
 
-<div class="hero">
-  <div>
-    <div class="kick">Weekly lead sheet · Pittsburgh · Cleveland · Chicago</div>
-    <h1>Every new restaurant in your metro, <em>weeks before</em> it opens.</h1>
-    <p class="lead">Liquor-licence applications, health and building permits, press and a daily web pass, fused, deduplicated and researched into one sheet every Sunday. For the people who sell to new restaurants.</p>
-    <a class="btn" href="mailto:?subject=Opening%20Soon%20PRO%20trial&body=Metro%3A%20%0ACompany%3A%20%0AWhat%20you%20sell%3A%20">Start a free 2-week trial</a>
-    <a class="btn alt" href="#samples">Open a live sample</a>
-    <div class="proof">Built by the system behind the Opening Soon feeds, which has published a verified new venue a day since summer.</div>
+<!-- NAV -->
+<div style="position:sticky;top:0;z-index:5;background:rgba(10,12,16,0.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,0.06)">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:68px">
+    <a href="#top" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#F3F5F8">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#FF7A1A;color:#0A0C10;font:700 12px/1 'Space Grotesk',sans-serif;letter-spacing:0.04em">OS</span>
+      <span class="display" style="font-size:18px;font-weight:700">Opening Soon <span style="color:#FFB15C">PRO</span></span>
+    </a>
+    <div class="hide-m" style="display:flex;align-items:center;gap:30px;font-size:14px;font-weight:500">
+      <a href="#samples" style="color:#C3CAD6;text-decoration:none">Samples</a>
+      <a href="#how" style="color:#C3CAD6;text-decoration:none">How it works</a>
+      <a href="#compare" style="color:#C3CAD6;text-decoration:none">Compare</a>
+      <a href="#pricing" style="color:#C3CAD6;text-decoration:none">Pricing</a>
+      <a class="btn btn-primary" href="mailto:hello@openingsoonpro.com?subject=Opening%20Soon%20PRO%20trial" style="min-height:40px;padding:0 16px;font-size:14px;border-radius:10px">Start free trial</a>
+    </div>
   </div>
-  <div class="shot"><span class="pill">LIVE · 2026-11-06</span><a href="samples/pgh/"><img src="assets/sheet.png" alt="The Pittsburgh lead sheet: a filterable table of new restaurant signals with address, status and source links" width="1200" height="760"></a></div>
 </div>
 
-<div class="stats" id="samples">
-<a class="stat" href="samples/cle/"><b>197</b><span>new venue signals in Cleveland, last 30 days · 45 researched</span><em>Open the live sample →</em></a>
-<a class="stat" href="samples/pgh/"><b>307</b><span>new venue signals in Pittsburgh, last 30 days · 52 researched</span><em>Open the live sample →</em></a>
-<a class="stat" href="samples/chi/"><b>633</b><span>new venue signals in Chicago, last 30 days · 128 researched</span><em>Open the live sample →</em></a>
+<!-- HERO -->
+<div id="top" class="grid-bg" style="position:relative;overflow:hidden;padding:96px 0 72px">
+  <div class="glow" style="position:absolute;left:50%;top:-220px;width:1100px;height:700px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,122,26,0.28),rgba(255,122,26,0.06) 55%,transparent 75%);pointer-events:none"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,#0A0C10 92%);pointer-events:none"></div>
+  <div class="wrap hero-grid" style="position:relative;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center">
+    <div class="hero-in" style="display:flex;flex-direction:column;gap:26px">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span class="pill" style="background:rgba(31,122,90,0.2);color:#6EE7B7;border:1px solid rgba(110,231,183,0.3)"><span class="dot live" style="background:#6EE7B7"></span>Live · updated every Sunday</span>
+        <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.1)">Pittsburgh · Cleveland · Chicago</span>
+      </div>
+      <h1 style="margin:0;font-size:72px;line-height:0.98;font-weight:700">Know every restaurant<br><span class="shine">before it opens.</span></h1>
+      <p style="margin:0;font-size:20px;line-height:1.55;color:#C3CAD6;max-width:540px">Liquor applications, health permits, local press and a daily web sweep, fused and verified into one weekly sheet. The list of who to call this week, months before your competitors hear about them.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;padding-top:4px">
+        <a class="btn btn-primary" href="mailto:hello@openingsoonpro.com?subject=Opening%20Soon%20PRO%20trial&amp;body=Metro%3A%20%0ACompany%3A%20%0AWhat%20you%20sell%3A%20">Start a free 2-week trial
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-glass" href="#samples">Open a live sample</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-top:14px">
+        <div class="glass rise lift" style="padding:16px 18px;border-radius:14px"><div class="display count" data-count="1,134" style="font-size:30px;font-weight:700;line-height:1">1,134</div><div class="muted" style="font-size:12.5px;margin-top:6px">signals in 30 days</div></div>
+        <div class="glass rise lift" style="padding:16px 18px;border-radius:14px"><div class="display count" data-count="222" style="font-size:30px;font-weight:700;line-height:1">222</div><div class="muted" style="font-size:12.5px;margin-top:6px">fully researched</div></div>
+        <div class="glass rise lift" style="padding:16px 18px;border-radius:14px"><div class="display" style="font-size:30px;font-weight:700;line-height:1">4</div><div class="muted" style="font-size:12.5px;margin-top:6px">public sources fused</div></div>
+      </div>
+    </div>
+    <!-- product card -->
+    <div class="glass card-in" style="display:flex;flex-direction:column;overflow:hidden;border-radius:20px;box-shadow:0 40px 100px -30px rgba(255,122,26,0.25),0 30px 60px -30px rgba(0,0,0,0.8)">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,0.08)">
+        <div style="display:flex;align-items:center;gap:10px"><span class="dot live" style="background:#6EE7B7"></span><span style="font:600 13px Inter,sans-serif">Pittsburgh · week of Nov 6</span></div>
+        <span class="mono muted" style="font-size:12px">307 signals · 52 researched</span>
+      </div>
+      <table class="sheet">
+        <thead><tr><th>Venue</th><th>Signal</th><th>Where</th><th>Status</th></tr></thead>
+        <tbody>
+<tr class="row-in"><td><b>Dot's Dollar</b><div class="muted" style="font-size:12px"></div></td><td>Food permit<div class="mono muted" style="font-size:11px">11/06</div></td><td class="muted">300 MOUNT LEBANON BLVD</td><td><span class="pill" style="background:rgba(255,177,92,0.15);color:#FFB15C">Imminent</span></td></tr>
+<tr class="row-in"><td><b>MOLINAROS FUEL BAR</b><div class="muted" style="font-size:12px">Butler</div></td><td>Food permit<div class="mono muted" style="font-size:11px">11/06</div></td><td class="muted">210 S MAIN ST Zelienople, </td><td><span class="pill" style="background:rgba(255,177,92,0.15);color:#FFB15C">Imminent</span></td></tr>
+<tr class="row-in"><td><b>Goulash House</b><div class="muted" style="font-size:12px">Carnegie</div></td><td>Press + permit<div class="mono muted" style="font-size:11px">RESEARCHED</div></td><td class="muted">415 Noblestown Rd, Carnegi</td><td><span class="pill" style="background:rgba(255,177,92,0.15);color:#FFB15C">Coming soon</span></td></tr>
+<tr class="row-in"><td><b>Saba Origin Coffee</b><div class="muted" style="font-size:12px">Cranberry Township</div></td><td>Press + permit<div class="mono muted" style="font-size:11px">RESEARCHED</div></td><td class="muted">20480 Route 19, Cranberry </td><td><span class="pill" style="background:rgba(255,177,92,0.15);color:#FFB15C">Coming soon</span></td></tr>
+<tr class="row-in"><td><b>Dynamic Coffee (Hamilton Ave café)</b><div class="muted" style="font-size:12px">Larimer</div></td><td>Press + permit<div class="mono muted" style="font-size:11px">RESEARCHED</div></td><td class="muted">6600 Hamilton Ave</td><td><span class="pill" style="background:rgba(255,177,92,0.15);color:#FFB15C">Coming soon</span></td></tr>
+</tbody>
+      </table>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-top:1px solid rgba(255,255,255,0.08);font-size:13px">
+        <span class="muted">+302 more rows this month</span>
+        <a href="samples/pgh/" style="font-weight:600;text-decoration:none">Open the full sample →</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<section>
-  <h2>Opening next in Pittsburgh</h2>
-  <p class="sub">Four rows from this week's sheet, as a rep would see them. Every row has a street address, a status and a source.</p>
-  <table class="teaser"><thead><tr><th>Status</th><th>Venue</th><th>Where</th><th>What</th><th>When</th></tr></thead><tbody>
-<tr><td><span class="st">COMING SOON</span></td><td><b>Goulash House</b></td><td>Carnegie</td><td>Chicken paprikash and paprika-red goulash from traditional Hungarian recipes are coming to Carnegie's Noblestown Road, w…</td><td>Opening soon</td></tr>
-<tr><td><span class="st">COMING SOON</span></td><td><b>Saba Origin Coffee</b></td><td>Cranberry Township</td><td>Saba Origin Coffee is bringing its Yemeni coffee north to Cranberry: 100% high-mountain beans from one of the oldest cof…</td><td>Opening soon</td></tr>
-<tr><td><span class="st">COMING SOON</span></td><td><b>Dynamic Coffee (Hamilton Ave café)</b></td><td>Larimer</td><td>The old KLVN Coffee Lab roastery café on Hamilton Ave gets a second act as the third café from Dynamic Coffee, the local…</td><td>Coming soon, no date yet</td></tr>
-<tr><td><span class="st">COMING SOON</span></td><td><b>Cupcake PGH</b></td><td>Allentown</td><td>Horror-themed cupcakes that won a following at local metal shows now get a home on Allentown's goth-leaning Arlington Av…</td><td>Opening date TBD</td></tr>
-  </tbody></table>
-</section>
-
-<section id="how">
-  <h2>How it works</h2>
-  <div class="t3">
-    <div class="step"><div class="n">1</div><h3>Four signals, not one</h3><p>Pending liquor licences (months ahead), health and building permits (weeks ahead), 80+ local press feeds and a daily web discovery pass by neighbourhood.</p></div>
-    <div class="step"><div class="n">2</div><h3>Deduplicated and researched</h3><p>Every signal is checked against everything seen before. The ones with substance are researched against the venue's own site, press, Google and Yelp, so "new" means new.</p></div>
-    <div class="step"><div class="n">3</div><h3>One sheet, every Sunday</h3><p>A filterable page and a CSV per metro. New signals on top, the researched openings with concept, timing, website and Instagram. No login, no app.</p></div>
-  </div>
-</section>
-
-<section id="metros">
-  <h2>Metros</h2>
-  <p class="sub">Live today in three. Any US metro with public liquor and permit data can be added in about two weeks; the next ones are chosen by request.</p>
-  <div class="who">
-    <span><b>Pittsburgh</b> · live</span><span><b>Cleveland</b> · live</span><span><b>Chicago</b> · live</span>
-    <span>Columbus · next</span><span>Philadelphia · next</span><span>Raleigh-Durham · next</span><span>Cincinnati</span><span>Baltimore</span><span>Tampa Bay</span><span>Orlando</span><span>Detroit</span><span>Austin</span>
-  </div>
-  <p class="sub" style="margin-top:16px"><a href="mailto:?subject=Add%20my%20metro%20to%20Opening%20Soon%20PRO&body=Metro%3A%20%0ACompany%3A%20%0AWhat%20you%20sell%3A%20">Request your metro →</a> The first paying subscriber in a new metro gets it free for three months.</p>
-</section>
-
-<section id="compare">
-  <h2>How it compares</h2>
-  <p class="sub">The honest version. There are three ways reps find new restaurants today, and each is missing something.</p>
-  <table class="teaser cmp"><thead><tr><th></th><th>Press and driving around</th><th>Licence scrapers</th><th>Lead-list services</th><th>Opening Soon PRO</th></tr></thead><tbody>
-    <tr><td>Sources</td><td>Newspaper roundups, window paper</td><td>One public record</td><td>One or two records plus phone research</td><td><b>Four: liquor, health and building permits, 80+ press feeds, daily web discovery</b></td></tr>
-    <tr><td>How early</td><td>Opening week, usually after</td><td>When the record posts</td><td>Days to weeks</td><td><b>Months on liquor filings, weeks on permits</b></td></tr>
-    <tr><td>"New" is verified</td><td>No, roundups recycle last year's openings</td><td>No, raw rows</td><td>Partly</td><td><b>Yes, every substantive lead researched against the venue's site, press, Google and Yelp</b></td></tr>
-    <tr><td>Depth per metro</td><td>A handful a week</td><td>Everything, including noise</td><td>About 40 a month advertised</td><td><b>300+ signals a month in Pittsburgh, 50+ fully researched</b></td></tr>
-    <tr><td>What a row tells you</td><td>A name</td><td>A licence number and address</td><td>Name, address, sometimes a contact</td><td><b>Name, address, concept, timing, website, Instagram, source, and why the feed skipped it</b></td></tr>
-    <tr><td>Price</td><td>Your Saturday</td><td>Cents per row, then your time</td><td>$200 to $1,000 a month</td><td><b>$99 a month per metro, cancel any time</b></td></tr>
-    <tr><td>Proof it works</td><td></td><td></td><td>Testimonials</td><td><b>A public feed posting a verified opening a day, for months</b></td></tr>
-  </tbody></table>
-  <p class="proof" style="margin-top:10px">Lead-list column reflects the published offers of Preopening Restaurants Resource, What Now and Restaurant Activity Report as checked on 2026-11-06; licence scrapers are the per-record feeds sold on Apify. Where we are weaker: we do not supply owner phone numbers or personal emails, by choice, and we cover three metros today.</p>
-</section>
-
-<section>
-  <h2>What is in a row</h2>
-  <ul class="f">
-    <li>Venue name and street address</li>
-    <li>Signal type and date found</li>
-    <li>Status: coming soon, in the works, now open, or raw signal</li>
-    <li>Concept in one line, cuisine, what it replaces</li>
-    <li>Opening timing where published</li>
-    <li>Website and Instagram handle</li>
-    <li>Source link on every row</li>
-    <li>Why the public feed skipped it, when it did</li>
-  </ul>
-  <p class="sub" style="margin-top:18px">The sheet keeps what the public feed skips. A chain unit, a suburban franchise or a second location is a lead for you even when it is not a story for us.</p>
-</section>
-
-<section>
-  <h2>Who buys it</h2>
-  <div class="who"><span>Foodservice distributor reps</span><span>POS and payments</span><span>Beer, wine and spirits distributors</span><span>Linen and uniform</span><span>Hood cleaning and fire suppression</span><span>Restaurant insurance</span><span>Equipment dealers</span><span>Payroll and accounting</span><span>Marketing, photo and web</span><span>Commercial brokers</span><span>Pest control</span><span>Reservation and delivery platforms</span></div>
-  <p class="sub" style="margin-top:18px">Operators pick their POS, distributor and insurer during the build-out, months before opening day. The rep who calls first usually gets the account. This is the list of who to call this week.</p>
-</section>
-
-<section id="pricing">
-  <h2>Pricing</h2>
-  <p class="sub">No contracts. Cancel from the receipt email.</p>
-  <div class="price">
-    <div class="p"><div class="n">$99<small>/month per metro</small></div><ul><li>Weekly sheet, every Sunday</li><li>CSV + filterable page</li><li>Full 30-day history on day one</li><li>Cancel any time</li></ul><div class="metro-btns"><a class="btn" href="https://buy.stripe.com/fZu3cu8k2b0odEs5qsc3m00">Pittsburgh</a><a class="btn" href="https://buy.stripe.com/bJe14m8k21pO9oc8CEc3m01">Cleveland</a><a class="btn" href="https://buy.stripe.com/dRm7sKgQy4C00RG4moc3m02">Chicago</a></div></div>
-    <div class="p hi"><div class="n">$249<small>/month all metros</small></div><ul><li>Pittsburgh, Cleveland, Chicago today</li><li>New metros included as they launch</li><li>Same weekly cadence</li></ul><a class="btn" href="https://buy.stripe.com/6oU9ASdEm0lK0RG1acc3m03">Subscribe</a></div>
-    <div class="p"><div class="n">Free<small>2-week trial</small></div><ul><li>The full sheet, not a teaser</li><li>Tell us the fields you act on and we add them</li><li>No card</li></ul><a class="btn alt" href="mailto:?subject=Opening%20Soon%20PRO%20trial&body=Metro%3A%20%0ACompany%3A%20%0AWhat%20you%20sell%3A%20">Email for a trial</a></div>
-  </div>
-</section>
-
-<section>
-  <h2>Questions</h2>
-  <details><summary>Where does the data come from?</summary><p>Public records (state liquor-licence applications, county health permits, city building permits), published local press, venue websites and public business listings. Business data only. Every row links to its source.</p></details>
-  <details><summary>How early is it?</summary><p>Liquor applications land months before opening; permits and pre-opening inspections weeks before; press usually last. The same system has posted openings on Instagram two weeks ahead of any press coverage.</p></details>
-  <details><summary>Do you include chains?</summary><p>Yes. The public feed skips chain units; the sheet keeps them and says why they were skipped, because a new unit is still a new account for you.</p></details>
-  <details><summary>Can I get other metros?</summary><p>Any US metro with public liquor and permit data can be added in about two weeks. Ask.</p></details>
-  <details><summary>Owner contact details?</summary><p>No. We publish the business, its address, website and social handle, and the licensee name when it is on the public filing. We do not scrape personal emails or phone numbers.</p></details>
-</section>
-
-<footer>Opening Soon PRO · built 2026-11-06 · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · Sources are public records, published press and venue websites.</footer>
+<!-- TICKER -->
+<div style="border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:16px 0;background:#0D1016">
+  <div class="wrap ticker"><div class="ticker-track">
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Building permit</b> Install 9' type 1 hood system  · North Shore Collinwood</span>
+<span class="tick"><span class="dot" style="background:#FFB15C"></span><b>Liquor application</b> Brier Creek Parrkway · Green</span>
+<span class="tick"><span class="dot" style="background:#FFB15C"></span><b>Liquor application</b> Fat Head's Brewing, Inc. · Middleburg Heights</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> Dot's Dollar · Pittsburgh</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> MOLINAROS FUEL BAR · Butler</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> IRON BRIDGE TAP HOUSE · Fayette</span>
+<span class="tick"><span class="dot" style="background:#FFB15C"></span><b>Liquor application</b> COURTYARD PITTSBURGH WEST HOME · West Homestead</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> AMAZING LIGHTS · CHICAGO</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> VITASANA MARKET · CHICAGO</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> MAN SUN · CHICAGO</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Building permit</b> Install 9' type 1 hood system  · North Shore Collinwood</span>
+<span class="tick"><span class="dot" style="background:#FFB15C"></span><b>Liquor application</b> Brier Creek Parrkway · Green</span>
+<span class="tick"><span class="dot" style="background:#FFB15C"></span><b>Liquor application</b> Fat Head's Brewing, Inc. · Middleburg Heights</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> Dot's Dollar · Pittsburgh</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> MOLINAROS FUEL BAR · Butler</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> IRON BRIDGE TAP HOUSE · Fayette</span>
+<span class="tick"><span class="dot" style="background:#FFB15C"></span><b>Liquor application</b> COURTYARD PITTSBURGH WEST HOME · West Homestead</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> AMAZING LIGHTS · CHICAGO</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> VITASANA MARKET · CHICAGO</span>
+<span class="tick"><span class="dot" style="background:#6EE7B7"></span><b>Pre-op inspection</b> MAN SUN · CHICAGO</span>
+</div></div>
 </div>
+
+<!-- WHO -->
+<div style="padding:28px 0 8px">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 10px">
+    <span class="eyebrow" style="margin-right:10px;color:#9AA4B5">Built for</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">Food distributors</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">POS &amp; payments</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">Beer, wine &amp; spirits</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">Insurance brokers</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">Linen &amp; uniform</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">Hood &amp; fire</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">Equipment dealers</span>
+    <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.08);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500">Commercial brokers</span>
+  </div>
+</div>
+
+<!-- SAMPLES -->
+<div id="samples" style="padding:88px 0">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span class="eyebrow">Live samples</span>
+      <h2 class="rise" style="margin:0;font-size:46px;line-height:1.05">See this week's sheet before you pay a dollar.</h2>
+      <p class="muted" style="margin:0;font-size:18px;line-height:1.55">Real data, rebuilt every Sunday. The paid edition is the same sheet with the week's new signals on top and a CSV button.</p>
+    </div>
+    <div class="stack-m" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px">
+<a class="glass lift rise" href="samples/cle/" style="display:flex;flex-direction:column;gap:10px;padding:28px;text-decoration:none;color:#F3F5F8"><span class="eyebrow" style="color:#9AA4B5">Cleveland</span><span class="display count" data-count="196" style="font-size:56px;font-weight:700;line-height:1">196</span><span class="muted" style="font-size:14px;line-height:1.5">signals in 30 days · 44 researched</span><span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#FFB15C;margin-top:10px">Open the live sample <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="glass lift rise" href="samples/pgh/" style="display:flex;flex-direction:column;gap:10px;padding:28px;text-decoration:none;color:#F3F5F8"><span class="eyebrow" style="color:#9AA4B5">Pittsburgh</span><span class="display count" data-count="307" style="font-size:56px;font-weight:700;line-height:1">307</span><span class="muted" style="font-size:14px;line-height:1.5">signals in 30 days · 52 researched</span><span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#FFB15C;margin-top:10px">Open the live sample <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+<a class="glass lift rise" href="samples/chi/" style="display:flex;flex-direction:column;gap:10px;padding:28px;text-decoration:none;color:#F3F5F8"><span class="eyebrow" style="color:#9AA4B5">Chicago</span><span class="display count" data-count="631" style="font-size:56px;font-weight:700;line-height:1">631</span><span class="muted" style="font-size:14px;line-height:1.5">signals in 30 days · 126 researched</span><span style="display:inline-flex;align-items:center;gap:8px;font-weight:600;color:#FFB15C;margin-top:10px">Open the live sample <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</div>
+
+<!-- HOW: bento -->
+<div id="how" style="padding:40px 0 88px">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span class="eyebrow">How it works</span>
+      <h2 class="rise" style="margin:0;font-size:46px;line-height:1.05">Four public signals. One verified list.</h2>
+    </div>
+    <div class="bento" style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:minmax(200px,auto);gap:16px">
+      <div class="glass rise lift" style="grid-column:span 4;padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;background:linear-gradient(135deg,rgba(255,122,26,0.14),rgba(255,255,255,0.03) 60%)">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span class="pill" style="background:rgba(255,177,92,0.15);color:#FFB15C;align-self:flex-start">Months ahead</span>
+          <h3 style="margin:0;font-size:28px">Liquor applications surface first</h3>
+          <p class="muted" style="margin:0;font-size:15.5px;line-height:1.6;max-width:560px">A pending licence is filed months before a door opens. We pull every application in the city and its ring counties daily, including the suburbs the city-only feeds never show.</p>
+        </div>
+        <div class="mono muted" style="font-size:12px">PLCB · OHIO DOLC · ILLINOIS ILCC</div>
+      </div>
+      <div class="glass rise lift" style="grid-column:span 2;padding:30px;display:flex;flex-direction:column;gap:10px">
+        <span class="pill" style="background:rgba(110,231,183,0.15);color:#6EE7B7;align-self:flex-start">Weeks ahead</span>
+        <h3 style="margin:0;font-size:24px">Health and building permits</h3>
+        <p class="muted" style="margin:0;font-size:15px;line-height:1.6">The pre-opening inspection is the last step before a kitchen turns on. We catch it the day it posts.</p>
+      </div>
+      <div class="glass rise lift" style="grid-column:span 2;padding:30px;display:flex;flex-direction:column;gap:10px">
+        <span class="pill" style="background:rgba(147,197,253,0.15);color:#93C5FD;align-self:flex-start">Daily</span>
+        <h3 style="margin:0;font-size:24px">80+ press feeds and a web sweep</h3>
+        <p class="muted" style="margin:0;font-size:15px;line-height:1.6">Neighborhood papers, TV, Patch, Google News by town, plus a daily discovery pass neighborhood by neighborhood.</p>
+      </div>
+      <div class="glass rise lift" style="grid-column:span 4;padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:20px">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <span class="pill" style="background:rgba(255,255,255,0.08);color:#F3F5F8;align-self:flex-start">Verified</span>
+          <h3 style="margin:0;font-size:28px">"New" means new</h3>
+          <p class="muted" style="margin:0;font-size:15.5px;line-height:1.6;max-width:560px">Every signal is checked against everything seen before. The substantive ones are researched against the venue's own site, press, Google and Yelp. No recycled roundups, no last year's openings. The same system has published a verified new venue a day on Instagram since summer.</p>
+        </div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap">
+          <div><div class="display" style="font-size:26px;font-weight:700">Sunday</div><div class="muted" style="font-size:12.5px">one sheet per metro</div></div>
+          <div><div class="display" style="font-size:26px;font-weight:700">CSV</div><div class="muted" style="font-size:12.5px">plus a filterable page</div></div>
+          <div><div class="display" style="font-size:26px;font-weight:700">Source</div><div class="muted" style="font-size:12.5px">linked on every row</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPARE -->
+<div id="compare" style="padding:0 0 88px">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span class="eyebrow">How it compares</span>
+      <h2 class="rise" style="margin:0;font-size:46px;line-height:1.05">The honest version.</h2>
+    </div>
+    <div class="glass rise lift" style="overflow-x:auto;padding:26px 10px 10px">
+      <table class="cmp">
+        <thead><tr><th></th><th>Press &amp; driving around</th><th>Licence scrapers</th><th>Lead-list services</th><th style="color:#FFB15C">Opening Soon PRO</th></tr></thead>
+        <tbody>
+          <tr><td>Sources</td><td>Roundups, window paper</td><td>One public record</td><td>One or two, plus phone research</td><td>Four: liquor, health and building permits, 80+ press feeds, daily web sweep</td></tr>
+          <tr><td>How early</td><td>Opening week, usually after</td><td>When the record posts</td><td>Days to weeks</td><td>Months on liquor filings, weeks on permits</td></tr>
+          <tr><td>"New" is verified</td><td>No, roundups recycle</td><td>No, raw rows</td><td>Partly</td><td>Yes, researched against the venue's site, press, Google and Yelp</td></tr>
+          <tr><td>Depth per metro</td><td>A handful a week</td><td>Everything, with the noise</td><td>About 40 a month advertised</td><td>300+ signals a month in Pittsburgh, 50+ fully researched</td></tr>
+          <tr><td>Price</td><td>Your Saturday</td><td>Cents a row, then your time</td><td>$200 to $1,000 a month</td><td>$99 a month per metro, cancel any time</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="margin:0;font-size:13px;max-width:900px">Lead-list column reflects the published offers of Preopening Restaurants Resource, What Now and Restaurant Activity Report as checked on 2026-11-07; licence scrapers are the per-record feeds sold on Apify. Where we are weaker: no personal phone numbers or emails, by choice, and three metros today.</p>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div id="pricing" style="position:relative;overflow:hidden;padding:88px 0;border-top:1px solid rgba(255,255,255,0.06)">
+  <div style="position:absolute;left:50%;top:40%;width:900px;height:600px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(255,122,26,0.16),transparent 70%);pointer-events:none"></div>
+  <div class="wrap" style="position:relative;display:flex;flex-direction:column;gap:32px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="rise" style="margin:0;font-size:46px;line-height:1.05">Less than one lost account.</h2>
+      <p class="muted" style="margin:0;font-size:18px">No contracts. Cancel from the receipt email. Sales tax added where it applies.</p>
+    </div>
+    <div class="stack-m" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch">
+      <div class="glass rise lift" style="display:flex;flex-direction:column;gap:18px;padding:32px">
+        <div><span class="display" style="font-size:52px;font-weight:700;line-height:1">$99</span><span class="muted" style="font-size:15px"> /month per metro</span></div>
+        <ul class="muted" style="margin:0;padding-left:18px;font-size:15px;line-height:1.8;flex:1"><li>Weekly sheet, every Sunday</li><li>CSV + filterable page</li><li>Full 30-day history on day one</li><li>Cancel any time</li></ul>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <a class="btn btn-glass" href="https://buy.stripe.com/fZu3cu8k2b0odEs5qsc3m00" style="min-height:44px;padding:0 16px;font-size:14px">Pittsburgh</a>
+          <a class="btn btn-glass" href="https://buy.stripe.com/bJe14m8k21pO9oc8CEc3m01" style="min-height:44px;padding:0 16px;font-size:14px">Cleveland</a>
+          <a class="btn btn-glass" href="https://buy.stripe.com/dRm7sKgQy4C00RG4moc3m02" style="min-height:44px;padding:0 16px;font-size:14px">Chicago</a>
+        </div>
+      </div>
+      <div class="glass rise lift" style="display:flex;flex-direction:column;gap:18px;padding:32px;border-color:rgba(255,122,26,0.6);box-shadow:0 30px 80px -30px rgba(255,122,26,0.45);position:relative;background:linear-gradient(180deg,rgba(255,122,26,0.12),rgba(255,255,255,0.03) 50%)">
+        <span class="pill" style="position:absolute;top:-13px;left:24px;background:#FF7A1A;color:#0A0C10">Best value</span>
+        <div><span class="display" style="font-size:52px;font-weight:700;line-height:1">$249</span><span class="muted" style="font-size:15px"> /month, all metros</span></div>
+        <ul class="muted" style="margin:0;padding-left:18px;font-size:15px;line-height:1.8;flex:1"><li>Pittsburgh, Cleveland, Chicago today</li><li>New metros included as they launch</li><li>Same weekly cadence</li><li>Cancel any time</li></ul>
+        <a class="btn btn-primary" href="https://buy.stripe.com/6oU9ASdEm0lK0RG1acc3m03">Subscribe to all metros</a>
+      </div>
+      <div class="glass rise lift" style="display:flex;flex-direction:column;gap:18px;padding:32px">
+        <div><span class="display" style="font-size:52px;font-weight:700;line-height:1">Free</span><span class="muted" style="font-size:15px"> 2-week trial</span></div>
+        <ul class="muted" style="margin:0;padding-left:18px;font-size:15px;line-height:1.8;flex:1"><li>The full sheet, not a teaser</li><li>Tell us the fields you act on and we add them</li><li>No card</li></ul>
+        <a class="btn btn-white" href="mailto:hello@openingsoonpro.com?subject=Opening%20Soon%20PRO%20trial&amp;body=Metro%3A%20%0ACompany%3A%20%0AWhat%20you%20sell%3A%20">Email for a trial</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- METROS + FAQ -->
+<div style="padding:72px 0 88px;border-top:1px solid rgba(255,255,255,0.06)">
+  <div class="wrap stack-m" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span class="eyebrow">Metros</span>
+      <h2 class="rise" style="margin:0;font-size:40px;line-height:1.05">Live in three. Next ones by request.</h2>
+      <p class="muted" style="margin:0;font-size:16px;line-height:1.6">Any US metro with public liquor and permit data can be added in about two weeks. The first paying subscriber in a new metro gets it free for three months.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span class="pill" style="background:#F3F5F8;color:#0A0C10">Pittsburgh · live</span>
+        <span class="pill" style="background:#F3F5F8;color:#0A0C10">Cleveland · live</span>
+        <span class="pill" style="background:#F3F5F8;color:#0A0C10">Chicago · live</span>
+        <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.1)">Columbus · next</span>
+        <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.1)">Philadelphia · next</span>
+        <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.1)">Raleigh-Durham · next</span>
+        <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.1)">Cincinnati</span>
+        <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.1)">Tampa Bay</span>
+        <span class="pill" style="background:rgba(255,255,255,0.05);color:#C3CAD6;border:1px solid rgba(255,255,255,0.1)">Detroit</span>
+      </div>
+      <a href="mailto:hello@openingsoonpro.com?subject=Add%20my%20metro" style="font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px">Request your metro <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <span class="eyebrow" style="margin-bottom:14px">Questions</span>
+      <div class="faq"><div style="font-weight:600;font-size:16px">Where does the data come from?</div><p class="muted" style="margin:0;font-size:15px;line-height:1.6">Public records (state liquor applications, county health permits, city building permits), published local press, venue websites and public business listings. Business data only. Every row links to its source.</p></div>
+      <div class="faq"><div style="font-weight:600;font-size:16px">How early is it?</div><p class="muted" style="margin:0;font-size:15px;line-height:1.6">Liquor applications land months before opening; permits and pre-opening inspections weeks before; press usually last. The same system has posted openings on Instagram two weeks ahead of any coverage.</p></div>
+      <div class="faq"><div style="font-weight:600;font-size:16px">Do you include chains?</div><p class="muted" style="margin:0;font-size:15px;line-height:1.6">Yes. The public feed skips chain units; the sheet keeps them and says why they were skipped, because a new unit is still a new account for you.</p></div>
+      <div class="faq"><div style="font-weight:600;font-size:16px">Owner contact details?</div><p class="muted" style="margin:0;font-size:15px;line-height:1.6">No. We publish the business, its address, website and social handle, and the licensee name when it is on the public filing. We do not scrape personal emails or phone numbers.</p></div>
+      <div class="faq" style="border-bottom:1px solid rgba(255,255,255,0.08)"><div style="font-weight:600;font-size:16px">Can I cancel?</div><p class="muted" style="margin:0;font-size:15px;line-height:1.6">Any time, from the link in your receipt. Access runs to the end of the paid month.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div style="padding:0 0 88px">
+  <div class="wrap">
+    <div class="glass rise lift" style="position:relative;overflow:hidden;padding:56px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:32px;align-items:center;background:linear-gradient(135deg,rgba(255,122,26,0.18),rgba(255,255,255,0.03) 55%)">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <h2 class="rise" style="margin:0;font-size:40px;line-height:1.05">Whoever calls first gets the account.</h2>
+        <p class="muted" style="margin:0;font-size:17px;line-height:1.55">Operators pick their distributor, POS and insurer during the build-out, months before opening day. This is the list of who to call this week.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end">
+        <a class="btn btn-primary" href="mailto:hello@openingsoonpro.com?subject=Opening%20Soon%20PRO%20trial">Start a free 2-week trial</a>
+        <a class="btn btn-glass" href="#pricing">See pricing</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="border-top:1px solid rgba(255,255,255,0.06);padding:28px 0 40px">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;font-size:13px;color:#9AA4B5">
+    <span>Opening Soon PRO · Shaker Heights, Ohio · <a href="mailto:hello@openingsoonpro.com" style="color:#C3CAD6">hello@openingsoonpro.com</a></span>
+    <span style="display:flex;gap:20px"><a href="terms.html" style="color:#C3CAD6">Terms</a><a href="privacy.html" style="color:#C3CAD6">Privacy</a><a href="https://www.instagram.com/openingsoonpgh/" style="color:#C3CAD6">Instagram</a></span>
+    <span>Sources are public records, published press and venue websites.</span>
+  </div>
+</div>
+
+</div>
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.rise');
+  if (!('IntersectionObserver' in window) || reduce) { els.forEach(function(e){ e.classList.add('in'); }); }
+  else {
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }); }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    els.forEach(function(e, i){ e.classList.add('d' + (i % 3 + 1)); io.observe(e); });
+  }
+  var counters = document.querySelectorAll('.count');
+  function run(el){ var target = parseInt(String(el.getAttribute('data-count')).replace(/[^0-9]/g,''), 10); if (!target) return; var t0 = null, dur = 1400; function step(ts){ if (!t0) t0 = ts; var p = Math.min(1, (ts - t0) / dur); var v = Math.round(target * (1 - Math.pow(1 - p, 3))); el.textContent = v.toLocaleString('en-US'); if (p < 1) requestAnimationFrame(step); } requestAnimationFrame(step); }
+  if (reduce || !('IntersectionObserver' in window)) return;
+  var cio = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if (en.isIntersecting) { run(en.target); cio.unobserve(en.target); } }); }, { threshold: 0.5 });
+  counters.forEach(function(c){ cio.observe(c); });
+})();
+</script>
 </body>
 </html>
